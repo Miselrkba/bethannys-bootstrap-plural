@@ -12,12 +12,54 @@
   </head>
 
   <body>
-    <main role="main">
-      <div class="jumbotron jumbotron-detail-apple-pie rounded-0">
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-primary">
         <div class="container">
-          <h1 class="display-3 text-white">Apple Pie</h1>
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="images/pie.png"
+              width="30"
+              height="30"
+              class="d-inline-block align-top"
+              alt=""
+            />
+            Bethany's Pie Shop</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="nav navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="allpies.html">Pies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="order.html">Order</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+      <div class="jumbotron jumbotron-detail-apple-pie container-fluid">
+        <div class="container">
+          <h1 class="display-3 text-white">Apple pie</h1>
         </div>
       </div>
+
       <div class="container">
         <h1>
           Apple pie
@@ -26,18 +68,12 @@
 
         <div class="row">
           <div class="col-md-8">
-            <img
-              src=" images/products/applepie.jpg"
-              class="rounded-lg img-fluid"
-              alt="Image of apple pie"
-            />
+            <img class="img-fluid" src="images/products/applepie.jpg" alt="" />
           </div>
 
           <div class="col-md-4">
-            <h3 class="mx-3 text-capitalize font-weight-lighter">
-              About this pie
-            </h3>
-            <p class="text-justify">
+            <h3 class="my-3">About this pie</h3>
+            <p>
               Sweet ice cream jelly beans lemon drops. Pastry toffee fruitcake
               gingerbread jelly-o. Lollipop sesame snaps muffin. Macaroon halvah
               marshmallow sesame snaps sugar plum dragée. Wafer pudding sesame
@@ -58,7 +94,7 @@
                 <a
                   type="button"
                   href="shoppingbasket.html"
-                  class="btn btn-info float-right"
+                  class="btn btn-success float-right"
                 >
                   Add to basket
                 </a>
@@ -68,36 +104,36 @@
         </div>
 
         <div class="row">
-          <div class="table-responsive p-4">
-            <table class="table table-striped table-hover table-bordered">
-              <!--table-dark table-hover table-bordered table-responsive  -->
-              <thead class="thead-light">
-                <!-- class="thead-light"-->
-                <tr>
-                  <th scope="col">Ingredient</th>
-                  <th scope="col">Risk</th>
-                  <th scope="col">Percentage</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="table-primary">
-                  <td>Apple</td>
-                  <td>Yes</td>
-                  <td>50%</td>
-                </tr>
-                <tr>
-                  <td>Eggs</td>
-                  <td>Yes</td>
-                  <td class="table-danger">10%</td>
-                </tr>
-                <tr>
-                  <td>Nuts</td>
-                  <td>Maybe</td>
-                  <td>&lt;0.1%</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <!-- <div class="table-responsive"> -->
+          <table class="table">
+            <!--table-dark table-hover table-bordered table-responsive  -->
+            <thead>
+              <!-- class="thead-light"-->
+              <tr>
+                <th scope="col">Ingredient</th>
+                <th scope="col">Risk</th>
+                <th scope="col">Percentage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Apple</td>
+                <td>Yes</td>
+                <td>50%</td>
+              </tr>
+              <tr>
+                <td>Eggs</td>
+                <td>Yes</td>
+                <td>10%</td>
+              </tr>
+              <tr>
+                <td>Nuts</td>
+                <td>Maybe</td>
+                <td>&lt;0.1%</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- </div> -->
         </div>
 
         <div class="p-4 mb-3 mt-2 bg-light rounded border border-primary">
@@ -108,10 +144,12 @@
           </p>
         </div>
 
-        <h3 class="display-5 my-4">Other customers also bought...</h3>
+        <!-- <span class="border border-primary">test</span> -->
+
+        <h3 class="my-4">Other customers also bought...</h3>
 
         <div class="row">
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6 mb-3">
             <a href="applepie.html">
               <img
                 class="img-fluid"
@@ -121,7 +159,7 @@
             </a>
           </div>
 
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6 mb-3">
             <a href="applepie.html">
               <img
                 class="img-fluid"
@@ -131,7 +169,7 @@
             </a>
           </div>
 
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6 mb-3">
             <a href="applepie.html">
               <img
                 class="img-fluid"
@@ -141,7 +179,7 @@
             </a>
           </div>
 
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6 mb-3">
             <a href="applepie.html">
               <img
                 class="img-fluid"
